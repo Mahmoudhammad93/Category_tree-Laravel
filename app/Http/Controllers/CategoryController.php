@@ -70,19 +70,4 @@ class CategoryController extends Controller
         return back()->with('success', 'New Category added successfully.');
 
     }
-
-
-    public function categories(){
-        $categories = Category::where('parent_id', '=', 0)->get();
-        $allCategories = Category::all();
-
-        // return $allCategories;
-        if(count($categories) > 0 || count($allCategories) > 0){
-            return response()->json(['categories' => $categories, 'allCategories' => $allCategories]);
-        }else{
-            return response()->json(['categories' => 'No Data Found', 'allCategories' => 'No Data Found']);
-        }
-    }
-
-
 }

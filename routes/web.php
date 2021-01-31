@@ -16,5 +16,4 @@
 // });
 
 Route::get('/', 'CategoryController@manageCategory');
-Route::get('/categories', 'CategoryController@categories');
 Route::post('add-category','CategoryController@addCategory')->name('add.category');

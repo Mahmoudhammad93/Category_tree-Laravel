@@ -81,7 +81,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    Categories API :- <a href="{{asset('')}}categories"> {{asset('')}}categories</a>
+                    Categories API :- <a href="{{asset('')}}api/categories"> {{asset('')}}api/categories</a>
                 </div>
             </div>
         </div>
